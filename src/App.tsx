@@ -31,7 +31,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-             <Route exactpath element = {<S />} />
+             <Route path="/" element = {<S />} />
           <Route path = "/*" element = {<NotFound />} />
         </Routes>
       </div>
