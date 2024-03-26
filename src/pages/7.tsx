@@ -9,6 +9,8 @@ import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head_bg from "../assets/hero5.png";
 import Headline from "../assets/headline_spandeb1.png";
+import abc from "../assets/abc.jpeg";
+
 
 // google tag manager
 
@@ -195,12 +197,12 @@ export default function Fifth_SP() {
     });
   };
 
-  const [quiz, setQuiz] = useState("Are you over the age of 64?  ");
+  const [quiz, setQuiz] = useState("Are you under the age of 64?  ");
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
   const [second, setSecond] = useState<any>(0);
-  const [yes,setYes]=useState("YES, I'M 65 OR OLDER")
-  const [no,setNo]=useState("NO, I'M 64 OR YOUNGER")
+  const [yes,setYes]=useState("YES, I'M 64 OR YOUNGER")
+  const [no,setNo]=useState("NO, I'M 65 OR OLDER")
   
 
   const stepProcess = () => {
@@ -266,7 +268,7 @@ export default function Fifth_SP() {
 
   const handleQuizP = () => {
     topScroll("btn");
-    if (quiz === "Are you over the age of 64?  ") {
+    if (quiz === "Are you under the age of 64?  ") {
       setYes("Yes")
       setNo("No")
       setQuiz("2. Do you live in the United States?");
@@ -338,7 +340,7 @@ export default function Fifth_SP() {
     <div>
      <ToastContainer />
       <div style={{marginBottom:'4px'}} className="top-sticky-blue-test2" id="top">
-      Senior's Allowance Program 2024
+      Grocery Allowance Program 2024
       </div>
       {step === "process" ? (
         <>
@@ -346,13 +348,13 @@ export default function Fifth_SP() {
             <div className="main-descrition-5-5">
               <div className="main-des-title-6-7">
                 <b>
-                Americans Over 65 Can Now Qualify For The $3600 Grocery Allowance in 2024!
+                Americans Under 65 Can Now Qualify For The $3600 Grocery Allowance in 2024!
                 </b>
               </div>
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
-              <img className="topic-img-middle-z" src={Head_bg} alt="head" />
+              <img className="topic-img-middle-z" src={abc} alt="head" />
               <div  style={{marginTop:'14px'}}className="main-des-5">
-              Americans over 65 years old can claim the 2024 Grocery Allowance Card that gives them up to $3600. Americans can use the funds to fully cover their Groceries, Medicines, etc. at Walmart and thousands of other participating stores!
+              Americans under 65 years old can claim the 2024 Grocery Allowance Card that gives them up to $3600. Americans can use the funds to fully cover their Groceries, Medicines, etc. at Walmart and thousands of other participating stores!
 
               </div>
               <div className="main-des-5"  style={{marginTop:'-5px'}}>
@@ -387,9 +389,9 @@ export default function Fifth_SP() {
           </div>
           <div className="spots-count">Spots remaining: 4</div>
           <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
-          <a href="tel:+18446720874">
+          <a href="tel:+18885170494">
             <div className="call-btn" onClick={handleCall}>
-            CALL (844) 672-0874
+            CALL (888) 517-0494
             </div>
           </a>
           <div className="sub-title">We Have Reserved Your Spot</div>
